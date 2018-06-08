@@ -34,3 +34,32 @@ case $SCRIPT in
         echo "Escribiste otra cosa: $SCRIPT"
 esac
 
+
+### Ciclos
+
+## for #################
+for i in `ls`
+do
+    echo $i
+done
+
+
+## until #################
+echo "Digite el nombre del script: "
+read SCRIPT
+
+until false
+do
+    echo "hola until"
+    read
+done
+
+## while #################
+echo "Digite el nombre del script: "
+read SCRIPT
+
+while test true
+do
+    echo "hola while"
+    read
+done
